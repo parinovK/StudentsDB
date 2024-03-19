@@ -1,11 +1,13 @@
 package ru.parinov.testSpringBootWithDB.repository;
 
+import org.springframework.stereotype.Repository;
 import ru.parinov.testSpringBootWithDB.model.StudentEntity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
+@Repository
 public class RepoStudentInMemory {
     private final List<StudentEntity> STUDENTS = new ArrayList<>();
 
