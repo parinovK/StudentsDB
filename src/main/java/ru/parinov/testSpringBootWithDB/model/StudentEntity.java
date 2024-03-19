@@ -1,8 +1,11 @@
 package ru.parinov.testSpringBootWithDB.model;
 
+import lombok.Data;
+
 import java.time.LocalDate;
 
-public class StudentModel {
+@Data
+public class StudentEntity {
     private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
