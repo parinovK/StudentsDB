@@ -18,22 +18,22 @@ public class StudentController {
         return service.findAllStudents();
     }
 
-    @PostMapping("save_student")
+    @PostMapping("save")
     public StudentEntity saveStudent(@RequestBody StudentEntity student) {
         return service.saveStudent(student);
     }
 
-    @GetMapping("/{email}")
+    @GetMapping("find/{email}")
     public StudentEntity findByEmail(@PathVariable String email) {
         return service.findByEmail(email);
     }
 
-    @PutMapping("update_student")
+    @PutMapping("update")
     public StudentEntity updateStudent(@RequestBody StudentEntity student) {
         return service.updateStudent(student);
     }
 
-    @DeleteMapping("delete_student/{email}")
+    @DeleteMapping("delete/{email}")
     public void deleteStudentByEmail(@PathVariable String email) {
         service.deleteStudentByEmail(email);
     }

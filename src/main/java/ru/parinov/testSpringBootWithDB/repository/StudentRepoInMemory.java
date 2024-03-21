@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @Repository
-public class RepoStudentInMemory {
+public class StudentRepoInMemory {
     private final List<StudentEntity> STUDENTS = new ArrayList<>();
 
     public List<StudentEntity> findAllStudents(){
