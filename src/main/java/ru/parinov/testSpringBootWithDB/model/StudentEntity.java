@@ -1,9 +1,6 @@
 package ru.parinov.testSpringBootWithDB.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -17,6 +14,7 @@ public class StudentEntity {
     private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
+    @Column(unique = true)
     private String email;
     private int age;
 }
